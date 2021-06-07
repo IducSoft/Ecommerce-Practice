@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+
+    display: grid;
+    margin: auto;
+    background-color: grey;
+    color: white;
+    width: 90%;
+    height: 70vh;
+    margin-top: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 15px;
+}
+
+.grid-item{
+
+    padding: 15px;
+    border: 2px solid white;
+}
+
+.grid-item:nth-child(10){
+
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1 / span 3;
+    background: red;
+
+}
